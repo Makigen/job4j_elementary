@@ -17,5 +17,16 @@ public class Converter {
         int dollar = Converter.rubleToDollar(540);
         System.out.println("540 RUB are " + euro + " EUR.");
         System.out.println("540 RUB are " + dollar + " USD.");
+
+        int in = 540;
+        int expectedE = 7;
+        int expectedD = 9;
+        int outE = rubleToEuro(in);
+        int outD = rubleToDollar(in);
+        boolean passedE = expectedE == outE;
+        boolean passedD = expectedD == outD;
+        System.out.println("540 RUB are 7 EUR. Test result : " + passedE);
+        System.out.println("540 RUB are 9 USD. Test result : " + passedD);
+
     }
 }
