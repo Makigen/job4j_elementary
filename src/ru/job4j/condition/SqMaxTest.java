@@ -25,4 +25,9 @@ public class SqMaxTest {
         int result = SqMax.max(1, 9, 8, 7);
         assertThat(result, is(9));
     }
+    @Test
+    public void whenMax1243Then4() {
+        int result = SqMax.max(1, 2, 4, 3);
+        assertThat(result, is(4));
+    }
 }
