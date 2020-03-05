@@ -6,7 +6,7 @@ import org.junit.Test;
 public class SqAreaTest {
 
     @Test
-    public void square(){
+    public void square() {
         int p = 6;
         int k = 2;
         double out = SqArea.square(p, k);

@@ -28,7 +28,7 @@ public class EndsWithTest {
     public void whenNotEndWithPrefixThenFalse2() {
         char[] word = {'M', 'e', 't', 'r', 'o', 'p', 'o', 'l', 'i', 't', 'a', 'n'};
         char[] pref = {'l', 't', 'a', 'n'};
-        boolean result =ArrayChar.startsWith(word, pref);
+        boolean result = ArrayChar.startsWith(word, pref);
         assertThat(result, Is.is(false));
     }
 }

@@ -11,7 +11,7 @@ public class SeqNumber {
         for (int index = 1; index <= n; index++) {
             hold += index;
             if (hold == n) {
-                System.out.println(index + " = "+ hold + " Success");
+                System.out.println(index + " = " + hold + " Success");
                 break;
             } else if (hold > n) {
                 System.out.println("Not possible");
