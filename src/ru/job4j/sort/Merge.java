@@ -11,24 +11,16 @@ public class Merge {
         int k = 0; //rsl array index;
         while (k < rsl.length && i < left.length && j < right.length) {
             if (left[i] >= right[j]) {
-                rsl[k] = right[j];
-                j++;
-                k++;
+                rsl[k++] = right[j++];
             } else if (left[i] < right[j]) {
-                rsl[k] = left[i];
-                i++;
-                k++;
+                rsl[k++] = left[i++];
             }
         } //code below is executed when one of the initial arrays is ended
         while (k < rsl.length && i < left.length) {
-            rsl[k] = left[i];
-            i++;
-            k++;
+            rsl[k++] = left[i++];
         }
         while (k < rsl.length && j < right.length) {
-            rsl[k] = right[j];
-            j++;
-            k++;
+            rsl[k++] = right[j++];
         }
         return rsl;
     }
