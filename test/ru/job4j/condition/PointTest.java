@@ -7,13 +7,10 @@ public class PointTest {
 
     @Test
     public void distance() {
-        int x1 = 27;
-        int x2 = 2;
-        int y1 = 20;
-        int y2 = 20;
-        double out = Point.distance(x1, x2, y1, y2);
+        Point a = new Point(27, 2);
+        Point b = new Point(20, 20);
+        double out = a.distance(b);
         double expected = 19.31;
         Assert.assertEquals(expected, out, 0.01);
     }
-
 }
