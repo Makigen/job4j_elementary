@@ -24,4 +24,16 @@ public class MaxTest {
         int result = Max.max(4, 4);
         assertThat(result, is(4));
     }
+
+    @Test
+    public void whenMaxIs42() {
+        int result = Max.max(1, 4, 3, 42);
+        assertThat(result, is(42));
+    }
+
+    @Test
+    public void whenMaxIs1() {
+        int result = Max.max(0, 1, -1, -2);
+        assertThat(result, is(1));
+    }
 }
