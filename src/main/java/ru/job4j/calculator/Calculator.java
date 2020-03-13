@@ -6,7 +6,6 @@ package ru.job4j.calculator;
  * @version 1.0
  */
 public class Calculator {
-
     /**
      * Addition.
      * @param first first argument.

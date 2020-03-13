@@ -1,7 +1,6 @@
 package ru.job4j.array;
 
 public class BarleyBreak {
-
     public static void main(String[] args) {
         int[][] numbers = new int[3][3];
         int k = 1;
